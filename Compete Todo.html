@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a2207303c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="todos-bg-container" id="bgContainer">
+        <div class="todos-heading-container p-3 col-12" id="todosHeadingContainer">
+            <!-- <div class="hamburger-container col-3 col-sm-3 col-lg-3 col-xl-2" id="hamBurgerContainer">
+                    <i class="fa-solid fa-bars hambarger-menu" id="hambarger-menu"></i>
+            </div> -->
+            <i class="fa-solid fa-bars hambarger-menu" id="hambargerMenu"></i>
+            <i class="fa-solid fa-book logoIcon"></i>
+            <h1 class="todos-heading ml-3" id="todosHeading">Todos</h1>
+            <input type="search" class="search-bar ml-5" id="searchBar" placeholder="Search">
+
+        </div>
+
+        <div class="row d-flex flex-row">
+            <div class="vertical-menu-container" id="verticalMenuContainer">
+                <!-- <div class="icon-and-name-container" id="todoIconCon">
+                    <i class="fa-solid fa-clipboard-check icon" id="todoIcon"></i>
+                    <p class="vertical-menu-item" id="todoIconTitle">Todos</p>
+                </div> -->
+                <div class="icon-and-name-container" id="noteIconCon">
+                    <i class="fa-solid fa-lightbulb icon note-Icon" id="noteIcon"></i>
+                    <p class="vertical-menu-item" id="noteIconTitle">Notes</p>
+                </div>
+                <div class="icon-and-name-container" id="starsIconCon">
+                    <i class="fa-solid fa-star icon" id="starsIcon"></i>
+                    <p class="vertical-menu-item-star" id="starsIconTitle">Stars</p>
+                </div>
+                <div class="icon-and-name-container" id="reminderIconCon">
+                    <i class="fa-solid fa-layer-group icon" id="reminderIcon"></i>
+                    <p class="vertical-menu-item" id="reminderIconTitle">Group</p>
+                </div>
+                <div class="icon-and-name-container" id="darkModeIconCon">
+                    <i class="fa-solid fa-circle-half-stroke icon" id="darkModeIcon"></i>
+                    <p class="vertical-menu-item" id="darkModeTitle">Dark Mode</p>
+                </div>
+                <div class="icon-and-name-container" id="trashIconCon">
+                    <i class="fa-solid fa-trash-can icon" id="trashIcon"></i>
+                    <p class="vertical-menu-item" id="trashIconTitle">Trash</p>
+                </div>
+            </div>
+            <div class="left-row d-flex flex-column col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 m-0">
+                <div class="task-bg-container m-0" id="taskBgContainer">
+                    <div class="task-bg-container-top">
+                        <h1 class="create-task-heading" id="createTaskHeading">
+                            Create <span class="create-task-heading-subpart" id="createTaskHeadingSubpart">Task</span>
+                        </h1>
+                        <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
+                        <button class="add-button" id="addTodoButton">Add</button>
+                    </div>
+                    <h1 class="todo-items-heading" id="todoItemsHeading">
+                        My <span class="todo-items-heading-subpart" id="todoItemsHeadingSubpart">Tasks</span>
+                    </h1>
+                    <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                    <button class="save-button mb-0" id="saveTodoButton">Save</button>
+                </div>
+                <div class="trash-container col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 m-0" id="trashContainer"></div>
+                <div class="Search-container col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 m-0" id="SearchContainer"></div>
+            </div>
+
+        </div>
+
+        <!-- <div class="note-container" id="noteContainer">
+                <div class="task-bg-container-top">
+                    <h1 class="create-task-heading" id="createTaskHeading">
+                        Create <span class="create-task-heading-subpart" id="createTaskHeadingSubpart">Note</span>
+                    </h1>
+                    <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
+                    <button class="add-button" id="addTodoButton">Add</button>
+                </div>
+                <h1 class="note-items-heading" id="todoItemsHeading">
+                    My <span class="todo-items-heading-subpart" id="todoItemsHeadingSubpart">Tasks</span>
+                </h1>
+                <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                <button class="save-button" id="saveTodoButton">Save</button> -->
+
+    </div>
+</body>
+
+</html>
